@@ -1,0 +1,96 @@
+@media (max-width: 767.98px) {
+	.advantages {
+		padding: 50px 0px;
+		&__items {
+			row-gap: 20px;
+		}
+	}
+}
+.consultation {
+	padding: 50px 0px;
+	&__title {
+		font-size: 26px;
+	}
+	&__text {
+		font-size: 16px;
+	}
+	&__button {
+		width: 100%;
+	}
+}
+
+@media (max-width: 669.98px) {
+	.header {
+		margin-bottom: 50px;
+		&__logo {
+			width: 45px;
+			overflow: hidden;
+			flex: 0 0 45px;
+		}
+	}
+
+	.promo {
+		padding: 20px 0px 40px 0px;
+		background: url(../img/image/main-bg.jpg) 25% / cover no-repeat;
+		&__title {
+			font-size: 32px;
+		}
+		&__subtitle {
+			font-size: 18px;
+			margin-bottom: 45px;
+		}
+		&__items {
+			width: 360px;
+		}
+		&__link {
+			font-size: 12px;
+		}
+	}
+
+	.advantages {
+		padding: 40px 0px;
+		&__title {
+			font-size: 26px;
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
+		&__items {
+			flex-direction: column;
+			row-gap: 20px;
+		}
+		&__item {
+			row-gap: 15px;
+		}
+	}
+
+	.consultation {
+		padding: 40px 0px;
+		&__title {
+			font-size: 22px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 476.98px) {
+	.header__official {
+		display: none;
+	}
+
+	.promo {
+		background: url(../img/image/main-bg.jpg) no-repeat;
+		&__title {
+			font-size: 26px;
+		}
+		&__subtitle {
+			font-size: 16px;
+			margin-bottom: 40px;
+		}
+		&__items {
+			width: 300px;
+		}
+	}
+}

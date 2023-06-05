@@ -1,0 +1,145 @@
+.advantages {
+	padding: 73px 0px 65px 0px;
+	background: #f6f6f6;
+	&__title {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+	}
+	&__items {
+		display: flex;
+		column-gap: 65px;
+	}
+	&__item {
+		flex: 0 1 33.333%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 25px;
+	}
+}
+
+/* ==================================================================================================== */
+
+.title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 100%;
+	text-align: center;
+	color: #0d0d0d;
+}
+
+/* ==================================================================================================== */
+
+.item-advantages {
+	&__title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 161%;
+		color: #0d0d0d;
+		text-align: center;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 129%;
+		color: #0d0d0d;
+		text-align: center;
+		flex: 1 1 auto;
+		a {
+			text-decoration-line: underline;
+			color: #ff0000;
+			text-transform: uppercase;
+			&:hover {
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+/* ==================================================================================================== */
+
+.consultation {
+	padding: 100px 0px;
+	background: url(../img/image/bg2.jpg) center center/cover no-repeat;
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 150%;
+		text-transform: uppercase;
+		color: #ffffff;
+		margin-bottom: 8px;
+	}
+	&__text {
+		max-width: 426px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 150%;
+		color: #ffffff;
+		&:not(:last-child) {
+			margin-bottom: 36px;
+		}
+	}
+}
+
+.form-consultation {
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 13px;
+	&__item {
+		padding: 8px 0px 8px 20px;
+		font-weight: 400;
+		font-size: 14px;
+		color: #4b4b4b;
+		border-radius: 5px;
+		&:nth-child(3) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+/* ==================================================================================================== */
+
+.slider {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	&__body {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+}
+
+.body-slider {
+	position: relative;
+	&__item
+		img{
+			max-width: 100%;
+		}
+}
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 50%;
+	left: -66px;
+	transform: translateY(-50%);
+	border: none;
+	background-color: #fff;
+	:hover {
+		cursor: pointer;
+		scale: (1.1);
+	}
+	img {
+		height: 50px;
+		width: 31px;
+	}
+}
+
+.slick-next {
+	right: -66px;
+	left: auto;
+}
+

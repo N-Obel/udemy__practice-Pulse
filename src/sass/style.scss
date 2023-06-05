@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+@import "variables";
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-family: 'MuseoModerno', cursive;
+}
+
+[class*="__container"]{
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+@import "header";
+@import "buttons";
+@import "main-page";
+@import "media";
