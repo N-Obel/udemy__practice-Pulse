@@ -104,8 +104,8 @@
 /* ==================================================================================================== */
 
 .slider {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 110px;
+	padding-bottom: 120px;
 	&__body {
 		max-width: 750px;
 		margin: 0 auto;
@@ -114,10 +114,9 @@
 
 .body-slider {
 	position: relative;
-	&__item
-		img{
-			max-width: 100%;
-		}
+	&__item img {
+		max-width: 100%;
+	}
 }
 
 .slick-prev,
@@ -143,3 +142,54 @@
 	left: auto;
 }
 
+/* ==================================================================================================== */
+
+.catalog {
+	padding-bottom: 65px;
+	&__title {
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 150%; /* 45/30 */
+		text-align: center;
+		text-transform: uppercase;
+		color: #0d0d0d;
+	}
+	&__tabs {
+		margin-top: 45px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	&__tab {
+		width: 220px;
+		height: 50px;
+		background: rgba(0, 0, 0, 0.0001);
+		border: 2px solid #d0d0d0;
+		text-align: center;
+		text-transform: uppercase;
+		transform: skewX(-25deg);
+		transition: 0.3s all ease 0s;
+		cursor: pointer;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 266.666667%; /* 48/18 */
+		color: #6b6b6b;
+		font-family: "MuseoModerno";
+		&:hover {
+			box-shadow: 3px 3px 20px $maincolor;
+			border: none;
+			scale: (1.1);
+			margin: 0 15px;
+		}
+		&_active {
+			background-color: $maincolor;
+			color: #ffffff;
+		}
+	}
+	
+}
+
+.tab-cat__link {
+	transform: skewX(25deg);
+}
