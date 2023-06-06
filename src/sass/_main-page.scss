@@ -189,13 +189,12 @@
 	&__items {
 		margin-top: 57px;
 		display: flex;
-		gap: 17px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 15px;
 	}
 	&__item {
-		flex: 0 1 33.333%;
-		justify-content: center;
-		align-items: center;
-		row-gap: 15px;
+		max-width: 303px;
 	}
 }
 
@@ -205,6 +204,9 @@
 
 .item-catalog {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	row-gap: 15px;
 	flex-direction: column;
 	padding: 20px;
 	background: #ffffff;
@@ -223,6 +225,22 @@
 		transition: 0.3s all ease 0s;
 		&_active {
 			transform: translateX(0%);
+		}
+	}
+	&__back {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(calc(-50% - 19px));
+		display: block;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		text-decoration: underline;
+		text-transform: uppercase;
+		color: $maincolor;
+		&:hover {
+			scale: (1.1);
 		}
 	}
 	&__list {
@@ -248,7 +266,6 @@
 				top: 7px;
 			}
 		}
-
 		&_active {
 			right: -14px;
 			width: 100%;
@@ -296,7 +313,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 30px;
+		gap: 25px;
 	}
 }
 
