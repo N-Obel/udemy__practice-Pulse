@@ -21,4 +21,12 @@
 		height: 50px;
 		padding: 12px 28px;
 	}
+	&_mini {
+		width: 135px;
+		height: 44px;
+		padding: 10px 27px;
+		&:hover {
+			border: 1px solid $maincolor;
+		}
+	}
 }

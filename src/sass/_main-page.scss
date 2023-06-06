@@ -90,7 +90,7 @@
 	flex-direction: column;
 	row-gap: 13px;
 	&__item {
-		padding: 8px 0px 8px 20px;
+		padding: 15px 0px 15px 20px;
 		font-weight: 400;
 		font-size: 14px;
 		color: #4b4b4b;
@@ -175,7 +175,6 @@
 		font-size: 18px;
 		line-height: 266.666667%; /* 48/18 */
 		color: #6b6b6b;
-		font-family: "MuseoModerno";
 		&:hover {
 			box-shadow: 3px 3px 20px $maincolor;
 			border: none;
@@ -187,9 +186,88 @@
 			color: #ffffff;
 		}
 	}
-	
+	&__items {
+		margin-top: 57px;
+		display: flex;
+		gap: 17px;
+	}
+	&__item {
+		flex: 0 1 33.333%;
+		justify-content: center;
+		align-items: center;
+		row-gap: 15px;
+	}
 }
 
 .tab-cat__link {
 	transform: skewX(25deg);
+}
+
+.item-catalog {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background: #ffffff;
+	border: 2px solid #e8e8e8;
+	&__image {
+		img {
+			max-width: 100%;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 156.25%; /* 25/16 */
+		text-align: center;
+		color: #0d0d0d;
+	}
+	&__text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 157.142857%; /* 22/14 */
+		text-align: center;
+		color: #0d0d0d;
+	}
+	&__link {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 100%;
+		text-align: center;
+		text-decoration-line: underline;
+		color: $maincolor;
+		&:hover {
+			scale: (1.1);
+		}
+	}
+	&__slash {
+		width: 263px;
+		height: 2px;
+		background: #e8e8e8;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+	}
+}
+
+.prices-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+	&__old {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 100%;
+		text-decoration-line: line-through;
+		color: #555555;
+	}
+	&__new {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 100%;
+		color: #050505;
+	}
 }
