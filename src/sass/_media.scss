@@ -94,6 +94,12 @@
 			gap: 22px;
 		}
 	}
+
+	.overlay .modal {
+		width: 300px;
+		min-height: 300px;
+		padding: 20px;
+	}
 }
 
 @media (max-width: 669.98px) {
@@ -163,7 +169,6 @@
 	}
 
 	.footer {
-		
 		&__info {
 			padding: 20px;
 			width: 300px;
@@ -179,7 +184,7 @@
 		&__social-item {
 			width: 42px;
 			height: 42px;
-			&:not(:last-child){
+			&:not(:last-child) {
 				margin-right: 17px;
 			}
 		}
@@ -202,6 +207,28 @@
 		}
 		&__items {
 			width: 300px;
+		}
+	}
+	
+	.button {
+		&_main {
+			width: 100%;
+		}
+	}
+
+	.overlay .modal {
+		width: 200px;
+		min-height: 200px;
+		padding: 10px;
+		&__subtitle {
+			font-size: 14px;
+		}
+		&__descr {
+			font-size: 12px;
+		}
+		&_mini {
+			min-height: 143px;
+			padding: 35px 65px;
 		}
 	}
 }

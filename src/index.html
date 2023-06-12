@@ -25,7 +25,7 @@
 				</div>
 				<div class="header__contacts">
 					<a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-					<button class="button">заказать звонок</button>
+					<button data-modal="consultation" class="button">заказать звонок</button>
 				</div>
 			</header>
 			<div class="promo__content">
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 				<div class="promo__actions">
-					<button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+					<button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
 					<div class="promo__link">
 						или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
 					</div>
@@ -100,7 +100,7 @@
 				<div class="consultation__text">Просто заполните форму заявки <br> и мы перезвоним вам в течении 10
 					минут
 				</div>
-				<form action="#" class="consultation__form form-consultation">
+				<form id="start-form" class="consultation__form form-consultation">
 					<input name="name" type="text" placeholder="Ваше имя" class="form-consultation__item" required>
 					<input name="phone" type="number" placeholder="Ваш телефон" class="form-consultation__item"
 						required>
@@ -176,7 +176,7 @@
 								<div class="item-catalog__image">
 									<img src="img/image/catalog.jpg" alt="pulsometr">
 								</div>
-								<div class="item-catalog__title">Пульсометр Polar FT1</div>
+								<div class="item-catalog__title">Пульсометр Suunto M2</div>
 								<div class="item-catalog__text">Для первых шагов в тренировках, основанных на
 									сердечном
 									ритме</div>
@@ -207,7 +207,7 @@
 								<div class="item-catalog__image">
 									<img src="img/image/catalog.jpg" alt="pulsometr">
 								</div>
-								<div class="item-catalog__title">Пульсометр Polar FT1</div>
+								<div class="item-catalog__title">Пульсометр Polar FT4</div>
 								<div class="item-catalog__text">Для первых шагов в тренировках, основанных на
 									сердечном
 									ритме</div>
@@ -513,9 +513,42 @@
 		</div>
 	</footer>
 
+	<div class="overlay">
+		<div class="modal" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+			<form action="#" class="consultation__form form-consultation">
+				<input name="name" type="text" placeholder="Ваше имя" class="form-consultation__item">
+				<input name="phone" type="number" placeholder="Ваш телефон" class="form-consultation__item">
+				<input name="email" type="email" placeholder="Ваш E-mail" class="form-consultation__item">
+				<button class="consultation__button button button_main" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+			</form>
+		</div>
+		<div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Ваш заказ:</div>
+			<div class="modal__descr">Пульсометр Polar FT1</div>
+			<form action="#" class="consultation__form form-consultation">
+				<input name="name" type="text" placeholder="Ваше имя" class="form-consultation__item" required>
+				<input name="phone" type="number" placeholder="Ваш телефон" class="form-consultation__item" required>
+				<input name="email" type="email" placeholder="Ваш E-mail" class="form-consultation__item" required>
+				<button class="consultation__button button button_main" type="submit">Купить</button>
+			</form>
+		</div>
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!:</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+		</div>
+	</div>
+
+
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
