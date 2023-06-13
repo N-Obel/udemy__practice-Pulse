@@ -41,7 +41,6 @@
 		color: #0d0d0d;
 		text-align: center;
 	}
-
 	&__text {
 		font-weight: 300;
 		font-size: 14px;
@@ -55,6 +54,32 @@
 			text-transform: uppercase;
 			&:hover {
 				font-weight: 500;
+			}
+		}
+	}
+	&__icon {
+		&_anime1 {
+			animation: cup 1.5s ease infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+		&_anime2 {
+			animation: heartbeat 1.5s ease infinite;
+			/* animation-name: heartbeat;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite; */
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+		&_anime3 {
+			animation: foot 1.5s ease infinite;
+			/* animation-name: foot;
+			animation-duration: 2s;
+			animation-iteration-count: infinite; */
+			&:hover {
+				animation-play-state: paused;
 			}
 		}
 	}
@@ -446,7 +471,7 @@
 		border-radius: 50%;
 		width: 52px;
 		height: 52px;
-		&:not(:last-child){
+		&:not(:last-child) {
 			margin-right: 27px;
 		}
 		&:hover {

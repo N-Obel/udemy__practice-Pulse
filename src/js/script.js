@@ -56,8 +56,6 @@ $(document).ready(function () {
 
 	//Validate forms
 
-
-
 	function valideForms(form) {
 		$(form).validate({
 			rules: {
@@ -82,5 +80,36 @@ $(document).ready(function () {
 	valideForms('#start-form');
 	valideForms('#consultation form');
 	valideForms('#order form');
+
+	// Message
+
+	$('form').submit(function (e) {
+		e.preventDefault();
+
+		if (!$(this).valid()) {
+			return;
+		}
+		$.ajax({
+			type: 'POST',
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find('input').val('');
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+			$('form').trigger('reset');
+		});
+		return false;
+	});
+
+	// Scroll up (arrow)
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600){
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	})
 
 });

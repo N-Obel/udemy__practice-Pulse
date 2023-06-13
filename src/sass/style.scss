@@ -8,6 +8,7 @@
 }
 
 @import "variables";
+@import "animation";
 
 a {
 	text-decoration: none;
@@ -51,3 +52,4 @@ body {
 @import "main-page";
 @import "media";
 @import "modal";
+@import "pageup";
