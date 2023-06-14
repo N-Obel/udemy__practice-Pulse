@@ -13,9 +13,6 @@
 	from {
 		transform: rotate(0deg);
 	}
-	/* 50% {
-		transform: rotate(180deg);
-	} */
 	to {
 		transform: rotate(360deg);
 	}
@@ -24,11 +21,7 @@
 	from {
 		transform: translateX(0px);
 	}
-	/* 50% {
-		transform: rotate(180deg);
-	} */
 	to {
 		transform: translateX(50px);
 	}
 }
-
